@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "open_reports":"playwright show-report",
-    "test_single_assert_title_headed": "playwright test tests/03_WaitAndAssertTitle.spec.js --headed",
-    "test_single_type_click_headed": "playwright test tests/04_Type_And_Click.spec.js --headed",
-    "test_single_elementText_headed": "playwright test tests/05_Assert_ExtractTextOfElement.spec.js --headed",
-    "test_single_optimizedSpec_headed": "playwright test tests/06_Optimized.spec.js --headed",
-    "test_single_fill_headed": "playwright test tests/07_Fill_And_SignIn.spec.js --headed",
-    "test_single_signIn_GetTitle_FirstProduct_headed": "playwright test tests/08_SignIn_GetTitleOfFirstProduct.spec.js --headed",
-    "test_single_signIn_allTextContents": "playwright test tests/09_SignIn_allTextContents.spec.js --headed",
-    "test_single_signIn_waitForStaticSite": "playwright test tests/10_SignIn_WaitForStaticSite.spec.js --headed"    
+    "Comment #1": "UDEMY-RS (From Section 1 to Section 3) - START",
+    "test_single_assert_title_headed": "playwright test tests/*/03_WaitAndAssertTitle.spec.js --headed",
+    "test_single_type_click_headed": "playwright test tests/*/04_Type_And_Click.spec.js --headed",
+    "test_single_elementText_headed": "playwright test tests/*/05_Assert_ExtractTextOfElement.spec.js --headed",
+    "test_single_optimizedSpec_headed": "playwright test tests/*/06_Optimized.spec.js --headed",
+    "test_single_fill_headed": "playwright test tests/*/07_Fill_And_SignIn.spec.js --headed",
+    "test_single_signIn_GetTitle_FirstProduct_headed": "playwright test tests/*/08_SignIn_GetTitleOfFirstProduct.spec.js --headed",
+    "test_single_signIn_allTextContents": "playwright test tests/*/09_SignIn_allTextContents.spec.js --headed",
+    "test_single_signIn_waitForStaticSite": "playwright test tests/*/10_SignIn_WaitForStaticSite.spec.js --headed",
+    "Comment #2": "UDEMY-RS (From Section 1 to Section 3) - END",
+    "Comment #3": "UDEMY-RS (From Section 4 to Section ) - START",
+    "test_single_dropdown_static": "playwright test tests/*/11_Dropdown_Static.spec.js --headed"      
         
   },
   "keywords": [],
