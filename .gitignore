@@ -1,6 +1,9 @@
 .vscode
+.DS_Store
 node_modules
 REFERENCE_Learning
+playwright-report
+test-results
 
 # cypress/reports/mochawesome-report/
 # cypress/screenshots/

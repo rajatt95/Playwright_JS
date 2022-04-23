@@ -40,11 +40,19 @@ const config = {
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    //trace: 'on-first-retry',
+    //trace: 'on',
+    trace: 'retain-on-failure',
     
     /* This can change the mode of Execution - Headless/Headed*/
     //headless:true // Headless
     //headless:false // Headed
+
+    /* This is for the screenshots (will be attached in the Reports) */
+    screenshot: 'on' // For every step
+    // screenshot: 'off'
+    // screenshot: 'only-on-failure'
+    
   },
 
   /* Configure projects for major browsers */

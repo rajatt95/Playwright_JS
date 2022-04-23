@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "open_reports":"playwright show-report",
+    "test_all_headed": "playwright test --headed",
     "Comment #1": "UDEMY-RS (From Section 1 to Section 3) - START",
     "test_single_assert_title_headed": "playwright test tests/*/03_WaitAndAssertTitle.spec.js --headed",
     "test_single_type_click_headed": "playwright test tests/*/04_Type_And_Click.spec.js --headed",
@@ -15,9 +16,19 @@
     "test_single_signIn_allTextContents": "playwright test tests/*/09_SignIn_allTextContents.spec.js --headed",
     "test_single_signIn_waitForStaticSite": "playwright test tests/*/10_SignIn_WaitForStaticSite.spec.js --headed",
     "Comment #2": "UDEMY-RS (From Section 1 to Section 3) - END",
-    "Comment #3": "UDEMY-RS (From Section 4 to Section ) - START",
-    "test_single_dropdown_static": "playwright test tests/*/11_Dropdown_Static.spec.js --headed"      
-        
+    "Comment #3": "UDEMY-RS (Section 4) - START",
+    "test_single_dropdown_static": "playwright test tests/*/11_Dropdown_Static.spec.js --headed",
+    "test_single_dropdown_static_pause": "playwright test tests/*/12_Dropdown_Static_Pause.spec.js --headed",
+    "test_single_radioBtn": "playwright test tests/*/13_RadioButton.spec.js --headed",
+    "test_single_checkBox": "playwright test tests/*/14_Checkbox.spec.js --headed",
+    "test_single_assert_attributeValue": "playwright test tests/*/15_Assert_AttributeValue.spec.js --headed",
+    "test_single_child_window": "playwright test tests/*/16_Handle_ChildWindows.spec.js --headed",
+    "test_single_changeFocusFromChildToParentWin": "playwright test tests/*/17_ChangeFocusFromChildToParentWin.spec.js --headed",    
+    "Comment #4": "UDEMY-RS (Section 4) - END",
+    "Comment #5": "UDEMY-RS (Section 5) - START",
+    "test_single_signIn_GetTitle_FirstProduct_debug": "playwright test tests/*/08_SignIn_GetTitleOfFirstProduct.spec.js --debug",
+    "Comment #6": "UDEMY-RS (Section 5) - END"
+
   },
   "keywords": [],
   "author": "",

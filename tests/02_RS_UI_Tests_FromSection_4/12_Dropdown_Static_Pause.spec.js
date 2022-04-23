@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - Handle Static Dropdown ', async ({page} )=> {
+test('RS - Playwright Test - Handle Static Dropdown and Pause the execution', async ({page} )=> {
 
     const applicationURL = "https://www.rahulshettyacademy.com/loginpagePractise/";
 
@@ -8,7 +8,7 @@ test('RS - Playwright Test - Handle Static Dropdown ', async ({page} )=> {
     const txtBox_password = page.locator('#password');
     const btn_SignIn = page.locator('#signInBtn');
     const drpdwn_role = page.locator("select[class='form-control']");
-   
+
     const title_products = page.locator('.card-body a')
     
     const data_login_username = "rahulshettyacademy";
@@ -30,6 +30,7 @@ test('RS - Playwright Test - Handle Static Dropdown ', async ({page} )=> {
     
     console.log('Click on Sign In button');
     await btn_SignIn.click();
-    
+
+    await page.pause();
     
 });
