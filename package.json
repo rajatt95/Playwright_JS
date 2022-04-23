@@ -1,9 +1,20 @@
 {
-  "name": "_01_playwright_js_basics",
+  "name": "01_playwright_js_basics",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "open_reports":"playwright show-report",
+    "test_single_assert_title_headed": "playwright test tests/03_WaitAndAssertTitle.spec.js --headed",
+    "test_single_type_click_headed": "playwright test tests/04_Type_And_Click.spec.js --headed",
+    "test_single_elementText_headed": "playwright test tests/05_Assert_ExtractTextOfElement.spec.js --headed",
+    "test_single_optimizedSpec_headed": "playwright test tests/06_Optimized.spec.js --headed",
+    "test_single_fill_headed": "playwright test tests/07_Fill_And_SignIn.spec.js --headed",
+    "test_single_signIn_GetTitle_FirstProduct_headed": "playwright test tests/08_SignIn_GetTitleOfFirstProduct.spec.js --headed",
+    "test_single_signIn_allTextContents": "playwright test tests/09_SignIn_allTextContents.spec.js --headed",
+    "test_single_signIn_waitForStaticSite": "playwright test tests/10_SignIn_WaitForStaticSite.spec.js --headed"    
+        
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

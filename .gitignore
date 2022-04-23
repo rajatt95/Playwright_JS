@@ -1,0 +1,13 @@
+.vscode
+node_modules
+REFERENCE_Learning
+
+# cypress/reports/mochawesome-report/
+# cypress/screenshots/
+# browserstack.json
+
+
+#~/.jenkins
+#~/.android
+#.jenkins
+#.android
