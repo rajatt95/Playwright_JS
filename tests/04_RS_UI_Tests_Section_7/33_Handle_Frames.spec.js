@@ -1,0 +1,42 @@
+const {test,expect} = require('@playwright/test');
+
+//NW -> Playwright unable to scroll to Frame element 
+test('RS - Playwright Test - RahulShettyAcademy Automation Practice App - Handle Frames', async ({page} )=> {
+
+    const applicationURL = "https://rahulshettyacademy.com/AutomationPractice/";
+
+    await page.goto(applicationURL);
+
+    // courses-iframe -> This is the ID of this frame
+    const frame_courses = page.frameLocator('#courses-iframe');
+
+    // frame_courses has the acces of this frame (which has ID courses-iframe)
+    // Perform operations on the elements in this Frame
+    // li a[href*='lifetime-access'] -> This CSS seector is giving 2 elements count (1 visible, 1 hidden)
+    await frame_courses.locator(" li a[href*='lifetime-access']:visible").click();
+
+    const frame_courses_link_more = frame_courses.locator('.navigation .dropdown-toggle').first();
+    mouseHoverOnElement(frame_courses_link_more,'Button Mouse Hover');
+    
+    await expect(frame_courses.locator("[href*='about-my-mission']").first()).toContainText('About us');
+
+    await waitForSomeTime(6);
+    
+});
+
+async function mouseHoverOnElement(element,elementText) {
+    console.log('Mouse Hover on: '+elementText);
+    await element.hover();
+}
+
+async function clickOnElement(element,elementText) {
+    console.log('Clicking on: '+elementText);
+    await element.click();
+}
+
+
+async function waitForSomeTime(timeInSeconds) {
+    console.log('Additional Wait for '+timeInSeconds+' seconds.');
+    await new Promise(resolve => setTimeout(resolve, (timeInSeconds*1000)));
+}
+
