@@ -1,0 +1,50 @@
+const {test,expect} = require('@playwright/test');
+
+const applicationURL = "https://www.rahulshettyacademy.com/client/";
+
+let webContext;
+
+test.beforeAll(async({browser})=>{
+    const context = await browser.newContext();
+    const page = await context.newPage();
+
+    await page.goto(applicationURL);
+    await page.locator('#userEmail').fill('testtmail95@gmail.com');
+    await page.locator('#userPassword').fill('HiRahul@123');
+    await page.locator('#login').click();
+    await page.waitForLoadState('networkidle');
+
+    // Store application stated in json file.
+    await context.storageState({path:'state.json'});
+
+    // Creating a webContext using this json file
+    webContext = await browser.newContext({storageState:'state.json'});
+
+});//beforeAll
+
+test('RS - Playwright Test - RahulShettyAcademy Client App Login - Skip Login using Browser Context (JSON file): Assert Tab - Home', async ()=> {
+    const page = await webContext.newPage(); 
+    page.goto(applicationURL);
+    const tab_Home = page.locator("[routerlink='/dashboard/']");
+    console.log('Assertions for tab: Home')
+    await expect(tab_Home).toBeVisible();   
+    
+});
+
+test('RS - Playwright Test - RahulShettyAcademy Client App Login - Skip Login using Browser Context (JSON file): Assert Tab - Sign Out', async ()=> {
+    const page = await webContext.newPage(); 
+    page.goto(applicationURL);
+    const tab_SignOut = page.locator("[class='fa fa-sign-out']");
+    console.log('Assertions for tab: Sign Out')
+    await expect(tab_SignOut).toBeVisible();  
+});
+
+test.afterEach(async() => {
+    await waitForSomeTime(2);    
+});//afterEach
+
+async function waitForSomeTime(timeInSeconds) {
+    console.log('Additional Wait for '+timeInSeconds+' seconds.');
+    await new Promise(resolve => setTimeout(resolve, (timeInSeconds*1000)));
+}
+

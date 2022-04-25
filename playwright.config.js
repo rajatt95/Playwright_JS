@@ -41,8 +41,8 @@ const config = {
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     //trace: 'on-first-retry',
-    //trace: 'on',
-    trace: 'retain-on-failure',
+    trace: 'on',
+    //trace: 'retain-on-failure',
     
     /* This can change the mode of Execution - Headless/Headed*/
     //headless:true // Headless
