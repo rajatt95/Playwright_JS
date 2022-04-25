@@ -57,12 +57,12 @@ const config = {
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'chromium',
-      use: {
-        ...devices['Desktop Chrome'],
-      },
-    },
+    // {
+    //   name: 'chromium',
+    //   use: {
+    //     ...devices['Desktop Chrome'],
+    //   },
+    // },
 
     // {
     //   name: 'firefox',
@@ -71,12 +71,12 @@ const config = {
     //   },
     // },
 
-    // {
-    //   name: 'webkit',
-    //   use: {
-    //     ...devices['Desktop Safari'],
-    //   },
-    // },
+    {
+      name: 'webkit',
+      use: {
+        ...devices['Desktop Safari'],
+      },
+    },
 
     /* Test against mobile viewports. */
     // {
@@ -100,7 +100,7 @@ const config = {
     //     channel: 'msedge',
     //   },
     // },
-    // /* Actual Chrome Browser installed*/
+    /* Actual Chrome Browser installed*/
     // {
     //   name: 'Google Chrome',
     //   use: {

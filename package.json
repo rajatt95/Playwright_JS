@@ -45,7 +45,17 @@
     "test_single_RS_handleFrames": "playwright test tests/*/33_Handle_Frames.spec.js --headed",
     "Comment #10": "UDEMY-RS (Section 7) - END",
     "Comment #11": "UDEMY-RS (Section 8) - START",
-    "Comment #12": "UDEMY-RS (Section 8) - END"
+    "test_single_RS_web_API_skipLogin": "playwright test tests/*/34_Skip_Login_Using_API.spec.js --headed",
+    "test_single_RS_web_API_skip_Login_PlaceOrder_AssertOrderHistoryPage": "playwright test tests/*/35_Skip_Login_CreateOrder_AssertOrderHistoryPage.spec.js --headed",
+    "test_single_RS_web_API_Optimized_Skip_Login_API_calls_From_Utils": "playwright test tests/*/36_Optimized_Skip_Login_From_Utils.spec.js --headed",
+    "test_single_RS_web_API_Optimized_Skip_Login_CreateOrder_API_calls_From_Utils": "playwright test tests/*/37_Optimized_Skip_Login_CreateOrder.spec.js --headed",
+     "Comment #12": "UDEMY-RS (Section 8) - END",
+    "test_folder_RS_Section1To3": "playwright test tests/01_RS_UI_Tests_FromSection_1_To_3/*.spec.js --headed",
+    "test_folder_RS_Section4": "playwright test tests/02_RS_UI_Tests_Section_4/*.spec.js --headed",
+    "test_folder_RS_Section6": "playwright test tests/03_RS_UI_Tests_ClientApp_Section_6/*.spec.js --headed",
+    "test_folder_RS_Section7": "playwright test tests/04_RS_UI_Tests_Section_7/*.spec.js --headed"
+
+    
 
   },
   "keywords": [],
