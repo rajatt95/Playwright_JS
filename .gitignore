@@ -4,6 +4,8 @@ node_modules
 REFERENCE_Learning
 playwright-report
 test-results
+allure-results
+
 
 # cypress/reports/mochawesome-report/
 # cypress/screenshots/
