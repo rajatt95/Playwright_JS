@@ -13,10 +13,8 @@ const { devices } = require('@playwright/test');
  * @type {import('@playwright/test').PlaywrightTestConfig}
  */
 const config = {
-
   /* This is the location where all test cases are present. */
   testDir: './tests',
-
   /* Maximum time one test can run for. */
   timeout: 20 * 1000,
   expect: {
@@ -28,30 +26,14 @@ const config = {
   },
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
-  
   /* Retry on CI only */
-  //retries: process.env.CI ? 2 : 0,
-  retries: 1, //Failed test case will retry for 1 time
-
-  
+  retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  //workers: process.env.CI ? 1 : undefined,
-  /* This will start 7 instances will start parallely of any browser */
-  workers: 7, // Default is 5 
-
-
+  workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-
-    /* This is for handling SSL certificates */
-    //  ignoreHTTPSErrors:true,
-
-    /* This is to set the permissions */
-    // geolocation -> For Location
-    // permissions:['geolocation'],
-
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -61,42 +43,33 @@ const config = {
     //trace: 'on-first-retry',
     trace: 'on',
     //trace: 'retain-on-failure',
-    //trace:'on-first-retry',
-    //trace:'off'
     
     /* This can change the mode of Execution - Headless/Headed*/
     //headless:true // Headless
     //headless:false // Headed
 
     /* This is for the screenshots (will be attached in the Reports) */
-    screenshot: 'on', // For every step
+    screenshot: 'on' // For every step
     // screenshot: 'off'
     // screenshot: 'only-on-failure'
-
-    /* This is for recording the videos */
-    //video:'off', // Do not record video.
-    video:'on', //Record video for each test.
-    //video:'on-first-retry', // Record video only when retrying a test for the first time.
-    //video:'retain-on-failure', //Record video for each test, but remove all videos from successful test runs.
-    //video:'retry-with-video',
     
   },
 
   /* Configure projects for major browsers */
   projects: [
-    // {
-    //   name: 'chromium',
-    //   use: {
-    //     ...devices['Desktop Chrome'],
-    //   },
-    // },
-
     {
-      name: 'firefox',
+      name: 'chromium',
       use: {
-        ...devices['Desktop Firefox'],
+        ...devices['Desktop Chrome'],
       },
     },
+
+    // {
+    //   name: 'firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //   },
+    // },
 
     // {
     //   name: 'webkit',

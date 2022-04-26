@@ -5,8 +5,16 @@ class LoginPage{
         this.txtBox_username = page.locator('#userEmail');
         this.txtBox_password = page.locator('#userPassword');
         this.btn_Login = page.locator('#login');
-
+        this.msg_incorrect_username_password = page.locator('[style*=block]');
     }//constructor
+
+
+
+    getMsg_Incorrect_username_password(){
+        //this.tab_home.click();
+        this.msg_incorrect_username_password.waitFor();
+        return this.msg_incorrect_username_password;
+    }
 
     async goToApplication(){
         const applicationURL = "https://www.rahulshettyacademy.com/client/";

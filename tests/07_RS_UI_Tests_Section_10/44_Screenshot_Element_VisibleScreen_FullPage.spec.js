@@ -22,7 +22,10 @@ test('RS - Playwright Test - RahulShettyAcademy Automation Practice App - Screen
     await waitForSomeTime(2);
 
     console.log('Sreenshot: Full Page');
-    await page.screenshot({path:'./screenshots/Screenshot_FullPage.png'});
+    await page.screenshot({path:'./screenshots/Screenshot_FullPage.png',fullPage: true });
+    
+    console.log('Sreenshot: Visible Screen');
+    await page.screenshot({path:'./screenshots/Screenshot_VisibleScreen.png'});
 
     console.log('Sreenshot: Element');
     await btn_hide.screenshot({path:'./screenshots/Screenshot_Element.png'});

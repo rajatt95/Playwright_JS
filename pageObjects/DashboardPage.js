@@ -7,6 +7,7 @@ class DashboardPage{
 
         this.products = page.locator('.card-body');
         this.tab_cart = page.locator("[routerlink*=cart]");
+        this.tab_home = page.locator("[routerlink='/dashboard/']");
     }//constructor
 
     async searchProduct_And_AddToCart(product_ToAdd){
@@ -36,6 +37,7 @@ class DashboardPage{
     }
 
     getMsg_LoginSuccess(){
+        this.tab_home.click();
         this.msg_login_success.waitFor();
         return this.msg_login_success;
     }
