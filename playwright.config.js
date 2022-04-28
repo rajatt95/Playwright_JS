@@ -36,7 +36,7 @@ const config = {
   
   /* Opt out of parallel tests on CI. */
   //workers: process.env.CI ? 1 : undefined,
-  /* This will start 7 instances will start parallely of any browser */
+  /* This will start 10 instances will start parallely of any browser */
   workers: 7, // Default is 5 
 
 
@@ -84,19 +84,19 @@ const config = {
 
   /* Configure projects for major browsers */
   projects: [
-    // {
-    //   name: 'chromium',
-    //   use: {
-    //     ...devices['Desktop Chrome'],
-    //   },
-    // },
-
     {
-      name: 'firefox',
+      name: 'chromium',
       use: {
-        ...devices['Desktop Firefox'],
+        ...devices['Desktop Chrome'],
       },
     },
+
+    // {
+    //   name: 'firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //   },
+    // },
 
     // {
     //   name: 'webkit',
@@ -127,7 +127,7 @@ const config = {
     //     channel: 'msedge',
     //   },
     // },
-    /* Actual Chrome Browser installed*/
+    // /* Actual Chrome Browser installed*/
     // {
     //   name: 'Google Chrome',
     //   use: {
