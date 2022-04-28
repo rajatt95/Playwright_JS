@@ -1,6 +1,7 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - Change Focus From Child To Parent Window', async ({browser} )=> {
+
+test('Section_04_RS_UI_Tests - Change Focus From Child To Parent Window', async ({browser} )=> {
 
     const context = await browser.newContext(); // ----------------------------------- > (A) 
     

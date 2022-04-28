@@ -1,6 +1,7 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - Optimized Spec', async ({page} )=> {
+
+test('Section_03_RS_UI_Tests - Code optimized', async ({page} )=> {
 
     const applicationURL = "https://www.rahulshettyacademy.com/loginpagePractise/";
 

@@ -29,7 +29,7 @@ test.beforeEach(async ({page} )=> {
     await page.goto(applicationURL);
 });
 
-test('RS - Playwright Test - RahulShettyAcademy Client App - Optimized_Skip_Login_From_Utils', async ({page} )=> {
+test('Section_08_RS_UI_API_Tests - RahulShettyAcademy Client App - Optimized_Skip_Login_From_Utils', async ({page} )=> {
     const tab_Home = page.locator("[routerlink='/dashboard/']");
     console.log('Assertions for tab: Home')
     await expect(tab_Home).toBeVisible();   

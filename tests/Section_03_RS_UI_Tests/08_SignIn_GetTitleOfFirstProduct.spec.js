@@ -1,6 +1,7 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - SignIn GetTitleOfFirstProduct using first().textContent(), nth(0).textContent() ', async ({page} )=> {
+
+test('Section_03_RS_UI_Tests - SignIn GetTitleOfFirstProduct using first().textContent(), nth(0).textContent()', async ({page} )=> {
 
     const applicationURL = "https://www.rahulshettyacademy.com/loginpagePractise/";
 

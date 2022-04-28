@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - Retry Failed TestCase_AssertTitle', async ({page} )=> {
+test('Section_13_RS_UI_Tests - Retry Failed TestCase_AssertTitle', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.google.com/");

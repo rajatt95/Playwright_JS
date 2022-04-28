@@ -8,7 +8,7 @@ const credentials_login_multipleDataSet = JSON.parse(JSON.stringify(require('../
 //Iterating through an Array
 for(const data of credentials_login_multipleDataSet){
 
-    test(`RS - Playwright Test - POM_Optimized_Login_MultipleDataSet_JSON with Credentials: ${data.username} and ${data.password}`, async ({page} )=> {
+    test(`Section_11_RS_UI_Tests - POM_Optimized_Login_MultipleDataSet_JSON with Credentials: ${data.username} and ${data.password}`, async ({page} )=> {
 
         const data_login_username = data.username;
         const data_login_password = data.password;

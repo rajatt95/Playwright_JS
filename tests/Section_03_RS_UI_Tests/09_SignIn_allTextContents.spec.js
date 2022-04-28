@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - SignIn Get Text of all elements using allTextContents()', async ({page} )=> {
+test('Section_03_RS_UI_Tests - SignIn Get Text of all elements using allTextContents() method', async ({page} )=> {
 
     const applicationURL = "https://www.rahulshettyacademy.com/loginpagePractise/";
 

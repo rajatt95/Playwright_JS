@@ -98,7 +98,7 @@ test.afterEach(async() => {
 });
 
 
-test('RS - Playwright Test - RahulShettyAcademy Client App - Skip Login and Create Order using API call - Assert Order ID on Order History Page', async ({page} )=> {
+test('Section_08_RS_UI_API_Tests - RahulShettyAcademy Client App - Skip Login and Create Order using API call - Assert Order ID on Order History Page', async ({page} )=> {
     const tab_Orders = page.locator("[routerlink='/dashboard/myorders']");
     await tab_Orders.click();
 

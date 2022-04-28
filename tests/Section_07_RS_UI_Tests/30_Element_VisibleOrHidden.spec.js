@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - RahulShettyAcademy Automation Practice App - Assertion for Element Visible/Hidden', async ({page} )=> {
+test('Section_07_RS_UI_Tests - RahulShettyAcademy Automation Practice App - Assertion for Element Visible/Hidden', async ({page} )=> {
 
     const applicationURL = "https://rahulshettyacademy.com/AutomationPractice/";
 

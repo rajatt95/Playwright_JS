@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
-test('@Regression @Sanity @Smoke RS - Playwright Test #1 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
+test('@Regression @Sanity @Smoke Section_13_RS_UI_Tests - Playwright Test #1 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.google.com/");
@@ -13,7 +13,7 @@ test('@Regression @Sanity @Smoke RS - Playwright Test #1 - Assert_Title_4_TestsI
 
 });
 
-test('@Regression @BVT @Sanity RS - Playwright Test #2 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
+test('@Regression @BVT @Sanity Section_13_RS_UI_Tests - Playwright Test #2 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.google.com/");
@@ -27,7 +27,7 @@ test('@Regression @BVT @Sanity RS - Playwright Test #2 - Assert_Title_4_TestsInO
 });
 
 
-test('@Regression @BVT RS - Playwright Test #3 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
+test('@Regression @BVT Section_13_RS_UI_Tests - Playwright Test #3 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.google.com/");
@@ -40,7 +40,7 @@ test('@Regression @BVT RS - Playwright Test #3 - Assert_Title_4_TestsInOneSpecFi
 
 });
 
-test('@Regression @Smoke RS - Playwright Test #4 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
+test('@Regression @Smoke Section_13_RS_UI_Tests - Playwright Test #4 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.google.com/");

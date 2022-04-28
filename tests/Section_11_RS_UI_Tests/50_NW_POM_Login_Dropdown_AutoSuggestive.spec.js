@@ -8,7 +8,7 @@ const {CartPage} = require('../../pageObjects/CartPage');
 const {CheckoutPage} = require('../../pageObjects/CheckoutPage');
 
 
-test('RS - Playwright Test - RahulShettyAcademy Client App Login - POM_Login_Dropdown_AutoSuggestive', async ({page} )=> {
+test('Section_11_RS_UI_Tests - RahulShettyAcademy Client App Login - POM_Login_Dropdown_AutoSuggestive', async ({page} )=> {
 
     const data_login_username = "testtmail95@gmail.com";
     const data_login_password = "HiRahul@123";

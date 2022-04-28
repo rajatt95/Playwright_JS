@@ -1,6 +1,8 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - RahulShettyAcademy Client App Login', async ({page} )=> {
+
+
+test('Section_06_RS_UI_Tests - RahulShettyAcademy Client App Login', async ({page} )=> {
 
     const applicationURL = "https://www.rahulshettyacademy.com/client/";
 

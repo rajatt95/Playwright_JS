@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - RahulShettyAcademy Automation Practice App - Assertion with Go Back and Forward', async ({page} )=> {
+test('Section_07_RS_UI_Tests - RahulShettyAcademy Automation Practice App - Assertion with Go Back and Forward', async ({page} )=> {
 
     const rs_applicationURL = "https://rahulshettyacademy.com/AutomationPractice/";
     const google_URL = "https://www.google.com/";

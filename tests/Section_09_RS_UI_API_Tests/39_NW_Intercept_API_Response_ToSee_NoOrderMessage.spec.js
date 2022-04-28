@@ -1,8 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
-
-
-test('RS - Playwright Test - RahulShettyAcademy Client App Login - Intercept_API_Response_ToSee_NoOrderMessage.spec', async ({page})=> {
+test('Section_09_RS_UI_API_Tests - RahulShettyAcademy Client App Login - Intercept_API_Response_ToSee_NoOrderMessage.spec', async ({page})=> {
    
     await page.goto('https://www.rahulshettyacademy.com/client/');
     await page.locator('#userEmail').fill('testtmail95@gmail.com');

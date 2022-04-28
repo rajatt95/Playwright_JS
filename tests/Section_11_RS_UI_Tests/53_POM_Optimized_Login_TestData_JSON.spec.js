@@ -5,7 +5,7 @@ const {POM_Manager} = require('../../pageObjects/POM_Manager');
 // JSON -> String -> JS Object
 const credentials_login_dataSet = JSON.parse(JSON.stringify(require('../../testData/credentials_login.json')));
 
-test('RS - Playwright Test - POM_Optimized_Login_TestData_JSON', async ({page} )=> {
+test('Section_11_RS_UI_Tests - POM_Optimized_Login_TestData_JSON', async ({page} )=> {
 
     // const data_login_username = "testtmail95@gmail.com";
     // const data_login_password = "HiRahul@123";

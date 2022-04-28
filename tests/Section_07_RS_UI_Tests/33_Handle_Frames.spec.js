@@ -1,7 +1,7 @@
 const {test,expect} = require('@playwright/test');
 
 //NW -> Playwright unable to scroll to Frame element 
-test('RS - Playwright Test - RahulShettyAcademy Automation Practice App - Handle Frames', async ({page} )=> {
+test('Section_07_RS_UI_Tests - RahulShettyAcademy Automation Practice App - Handle Frames', async ({page} )=> {
 
     const applicationURL = "https://rahulshettyacademy.com/AutomationPractice/";
 

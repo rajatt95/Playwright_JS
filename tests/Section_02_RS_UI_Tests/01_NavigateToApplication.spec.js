@@ -3,7 +3,7 @@ const {test} = require('@playwright/test');
 // test() -> Function (takes 1st argument as Test case name and 2nd as Anonymous function())
 // {browser} -> Fixture (Available for all the tests)
 // test('My First Playwright Test', async function(){
-test('RS - My First Playwright Test - Browser Context', async ({browser} )=> {
+test('Section_02_RS_UI_Tests - My First Playwright Test - 01_NavigateToApplication, Direct use Fixture: Browser', async ({browser} )=> {
     
     // Step-1: Open Browser
         // Set the Browser context
@@ -28,7 +28,8 @@ test('RS - My First Playwright Test - Browser Context', async ({browser} )=> {
 // {page} -> Fixture (Available for all the tests)
 //only -> Only this test case will run 
 //test.only('RS - My second Playwright Test - No Browser Context, Direct use Fixture: page', async ({page} )=> {
-test('RS - My second Playwright Test - No Browser Context, Direct use Fixture: page', async ({page} )=> {
+
+test('Section_02_RS_UI_Tests - My second Playwright Test - No Browser Context, Direct use Fixture: page', async ({page} )=> {
 
     //Step-1: Go to the application
     // await page.goto("https://www.rahulshettyacademy.com/loginpagePractise/");

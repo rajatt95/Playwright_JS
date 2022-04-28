@@ -1,6 +1,7 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - Extract the text of Element and Assert', async ({page} )=> {
+
+test('Section_03_RS_UI_Tests - Extract the text of Element and Assert', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.rahulshettyacademy.com/loginpagePractise/");

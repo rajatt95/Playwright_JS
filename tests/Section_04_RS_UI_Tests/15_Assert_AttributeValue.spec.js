@@ -1,6 +1,7 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - Assert Attribute values for an element', async ({page} )=> {
+
+test('Section_04_RS_UI_Tests - Assert Attribute values for an element', async ({page} )=> {
 
     const applicationURL = "https://www.rahulshettyacademy.com/loginpagePractise/";
     

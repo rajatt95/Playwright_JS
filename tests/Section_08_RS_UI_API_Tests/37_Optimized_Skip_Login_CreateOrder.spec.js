@@ -48,7 +48,7 @@ test.afterEach(async() => {
 });
 
 
-test('RS - Playwright Test - RahulShettyAcademy Client App - Skip Login and Create Order using API call - Assert Order ID on Order History Page', async ({page} )=> {
+test('Section_08_RS_UI_API_Tests - RahulShettyAcademy Client App - Skip Login and Create Order using API call - Assert Order ID on Order History Page', async ({page} )=> {
     const tab_Orders = page.locator("[routerlink='/dashboard/myorders']");
     await tab_Orders.click();
 
@@ -79,6 +79,21 @@ test('RS - Playwright Test - RahulShettyAcademy Client App - Skip Login and Crea
 
 
 
+test('Section_08_RS_UI_Tests - Intentionally Failing - Wait and Assert the Page Title', async ({page} )=> {
+
+    // Go to the application
+    await page.goto("https://www.google.com/");
+
+    // Get the Title and Print
+    console.log(await page.title());
+
+    //await delay(5000); //ReferenceError: delay is not defined
+    await new Promise(resolve => setTimeout(resolve, 2000)); // 2 sec
+
+    // Assert the Page Title
+    await expect(page).toHaveTitle('Google1');
+
+});
 
 
 async function mouseHoverOnElement(element,elementText) {

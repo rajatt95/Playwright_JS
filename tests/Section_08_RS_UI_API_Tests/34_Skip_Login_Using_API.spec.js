@@ -51,13 +51,13 @@ test.afterEach(async() => {
 });
 
 
-test('RS - Playwright Test - RahulShettyAcademy Client App - Skip Login using API call - Assert Tab: Home', async ({page} )=> {
+test('Section_08_RS_UI_API_Tests - RahulShettyAcademy Client App - Skip Login using API call - Assert Tab: Home', async ({page} )=> {
     const tab_Home = page.locator("[routerlink='/dashboard/']");
     console.log('Assertions for tab: Home')
     await expect(tab_Home).toBeVisible();   
 });
 
-test('RS - Playwright Test - RahulShettyAcademy Client App - Skip Login using API call - Assert Tab: Sign Out', async ({page} )=> {
+test('Section_08_RS_UI_API_Tests - RahulShettyAcademy Client App - Skip Login using API call - Assert Tab: Sign Out', async ({page} )=> {
     const tab_SignOut = page.locator("[class='fa fa-sign-out']");
     console.log('Assertions for tab: Sign Out')
     await expect(tab_SignOut).toBeVisible();   

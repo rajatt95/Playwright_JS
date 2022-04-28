@@ -59,8 +59,8 @@ const config = {
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     //trace: 'on-first-retry',
-    trace: 'on',
-    //trace: 'retain-on-failure',
+    //trace: 'on',
+    trace: 'retain-on-failure',
     //trace:'on-first-retry',
     //trace:'off'
     
@@ -69,15 +69,15 @@ const config = {
     //headless:false // Headed
 
     /* This is for the screenshots (will be attached in the Reports) */
-    screenshot: 'on', // For every step
-    // screenshot: 'off'
-    // screenshot: 'only-on-failure'
+    //screenshot: 'on', // For every step
+    // screenshot: 'off',
+    screenshot: 'only-on-failure',
 
     /* This is for recording the videos */
     //video:'off', // Do not record video.
-    video:'on', //Record video for each test.
+    //video:'on', //Record video for each test.
     //video:'on-first-retry', // Record video only when retrying a test for the first time.
-    //video:'retain-on-failure', //Record video for each test, but remove all videos from successful test runs.
+    video:'retain-on-failure', //Record video for each test, but remove all videos from successful test runs.
     //video:'retry-with-video',
     
   },

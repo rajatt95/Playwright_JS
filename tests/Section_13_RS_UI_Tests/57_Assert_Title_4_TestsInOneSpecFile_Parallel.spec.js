@@ -2,7 +2,7 @@ const {test,expect} = require('@playwright/test');
 
 test.describe.configure( { mode : 'parallel' } );
 
-test('RS - Playwright Test #1 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
+test('Section_13_RS_UI_Tests - Playwright Test #1 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.google.com/");
@@ -15,7 +15,7 @@ test('RS - Playwright Test #1 - Assert_Title_4_TestsInOneSpecFile', async ({page
 
 });
 
-test('RS - Playwright Test #2 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
+test('Section_13_RS_UI_Tests - Playwright Test #2 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.google.com/");
@@ -28,7 +28,7 @@ test('RS - Playwright Test #2 - Assert_Title_4_TestsInOneSpecFile', async ({page
 
 });
 
-test('RS - Playwright Test #3 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
+test('Section_13_RS_UI_Tests - Playwright Test #3 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.google.com/");
@@ -41,7 +41,7 @@ test('RS - Playwright Test #3 - Assert_Title_4_TestsInOneSpecFile', async ({page
 
 });
 
-test('RS - Playwright Test #4 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
+test('Section_13_RS_UI_Tests - Playwright Test #4 - Assert_Title_4_TestsInOneSpecFile', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.google.com/");

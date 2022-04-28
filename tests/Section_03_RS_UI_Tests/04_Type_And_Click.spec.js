@@ -1,6 +1,7 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - Fill value in TextBox using type() and Click on Button ', async ({page} )=> {
+
+test('Section_03_RS_UI_Tests - Fill value in TextBox using type() and Click on Button', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.rahulshettyacademy.com/loginpagePractise/");

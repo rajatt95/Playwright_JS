@@ -1,6 +1,7 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - SignIn Get Text of all elements using allTextContents() with wait for Static websites ', async ({page} )=> {
+
+test('Section_03_RS_UI_Tests - SignIn Get Text of all elements using allTextContents() with wait for Static websites', async ({page} )=> {
 
     const applicationURL = "https://www.rahulshettyacademy.com/loginpagePractise/";
 
@@ -42,5 +43,22 @@ test('RS - Playwright Test - SignIn Get Text of all elements using allTextConten
         // -> This will get the title of all the elements and put into one array
         // -> Playwright does not auto-wait for this method; This will return an empty Array
     console.log(await title_products.allTextContents());
+
+});
+
+
+test('Section_03_RS_UI_Tests - Intentionally Failing - Wait and Assert the Page Title', async ({page} )=> {
+
+    // Go to the application
+    await page.goto("https://www.google.com/");
+
+    // Get the Title and Print
+    console.log(await page.title());
+
+    //await delay(5000); //ReferenceError: delay is not defined
+    await new Promise(resolve => setTimeout(resolve, 2000)); // 2 sec
+
+    // Assert the Page Title
+    await expect(page).toHaveTitle('Google1');
 
 });

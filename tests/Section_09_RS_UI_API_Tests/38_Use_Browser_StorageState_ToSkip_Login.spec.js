@@ -22,7 +22,7 @@ test.beforeAll(async({browser})=>{
 
 });//beforeAll
 
-test('RS - Playwright Test - RahulShettyAcademy Client App Login - Skip Login using Browser Context (JSON file): Assert Tab - Home', async ()=> {
+test('Section_09_RS_UI_API_Tests - RahulShettyAcademy Client App Login - Skip Login using Browser Context (JSON file): Assert Tab - Home', async ()=> {
     const page = await webContext.newPage(); 
     page.goto(applicationURL);
     const tab_Home = page.locator("[routerlink='/dashboard/']");
@@ -31,7 +31,7 @@ test('RS - Playwright Test - RahulShettyAcademy Client App Login - Skip Login us
     
 });
 
-test('RS - Playwright Test - RahulShettyAcademy Client App Login - Skip Login using Browser Context (JSON file): Assert Tab - Sign Out', async ()=> {
+test('Section_09_RS_UI_API_Tests - RahulShettyAcademy Client App Login - Skip Login using Browser Context (JSON file): Assert Tab - Sign Out', async ()=> {
     const page = await webContext.newPage(); 
     page.goto(applicationURL);
     const tab_SignOut = page.locator("[class='fa fa-sign-out']");

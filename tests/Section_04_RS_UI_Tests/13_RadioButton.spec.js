@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - Handle Radio Button', async ({page} )=> {
+test('Section_04_RS_UI_Tests - Handle Radio Button', async ({page} )=> {
 
     const applicationURL = "https://www.rahulshettyacademy.com/loginpagePractise/";
 

@@ -1,6 +1,7 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - Handle Static Dropdown ', async ({page} )=> {
+
+test('Section_04_RS_UI_Tests - Handle Static Dropdown', async ({page} )=> {
 
     const applicationURL = "https://www.rahulshettyacademy.com/loginpagePractise/";
 

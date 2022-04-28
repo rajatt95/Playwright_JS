@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - RetryFailedTestCase_Type_And_Click', async ({page} )=> {
+test('Section_13_RS_UI_Tests - RetryFailedTestCase_Type_And_Click', async ({page} )=> {
 
     // Go to the application
     await page.goto("https://www.rahulshettyacademy.com/loginpagePractise/");

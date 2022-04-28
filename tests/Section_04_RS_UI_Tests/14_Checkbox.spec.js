@@ -1,6 +1,7 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - Handle Checkbox', async ({page} )=> {
+
+test('Section_04_RS_UI_Tests - Handle Checkbox', async ({page} )=> {
 
     const applicationURL = "https://www.rahulshettyacademy.com/loginpagePractise/";
 

@@ -3,7 +3,7 @@ const {CommonUtils}=require('../../utils/CommonUtils');
 const {POM_Manager} = require('../../pageObjects/POM_Manager');
 const {customtest} = require('../../utils/test-base');
 
-customtest('RS - Playwright Test - POM_Optimized_Login_TestData_FixtureFile', async ({page, testData_Login})=> {
+customtest('Section_11_RS_UI_Tests - POM_Optimized_Login_TestData_FixtureFile', async ({page, testData_Login})=> {
 
     const data_login_username = testData_Login.username;
     const data_login_password = testData_Login.password;

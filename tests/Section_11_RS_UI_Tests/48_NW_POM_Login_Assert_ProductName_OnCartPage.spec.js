@@ -7,7 +7,7 @@ const {DashboardPage} = require('../../pageObjects/DashboardPage');
 const {CartPage} = require('../../pageObjects/CartPage');
 
 
-test('RS - Playwright Test - RahulShettyAcademy Client App Login - POM_Login_Assert_ProductName_OnCartPage', async ({page} )=> {
+test('Section_11_RS_UI_Tests - RahulShettyAcademy Client App Login - POM_Login_Assert_ProductName_OnCartPage', async ({page} )=> {
 
     const data_login_username = "testtmail95@gmail.com";
     const data_login_password = "HiRahul@123";

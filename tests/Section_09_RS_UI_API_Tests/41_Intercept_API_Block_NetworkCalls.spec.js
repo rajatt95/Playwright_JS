@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
-test('RS - Playwright Test - RahulShettyAcademy Client App Login - Intercept_API_Block_NetworkCalls', async ({page})=> {
+test('Section_09_RS_UI_API_Tests - RahulShettyAcademy Client App Login - Intercept_API_Block_NetworkCalls', async ({page})=> {
    
     
     // Intercept -> Block Network call
