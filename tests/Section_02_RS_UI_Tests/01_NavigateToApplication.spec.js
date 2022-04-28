@@ -1,3 +1,12 @@
+/**  
+* @author Rajat Verma
+* https://www.linkedin.com/in/rajat-v-3b0685128/
+* https://github.com/rajatt95
+* https://rajatt95.github.io/ 
+*  
+* Course: Playwright JS Automation Testing from Scratch with Framework (https://www.udemy.com/course/playwright-tutorials-automation-testing/)
+* Tutor: Rahul Shetty (https://www.udemy.com/user/rahul445/)
+*/
 const {test} = require('@playwright/test');
 
 // test() -> Function (takes 1st argument as Test case name and 2nd as Anonymous function())
