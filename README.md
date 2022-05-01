@@ -1,4 +1,4 @@
-# Playwright_JS_Basics
+# Playwright_JS
 Automation Testing | Web+API | Playwright | Javascript | VS Code | Parallel Cross Browser Testing | API Interceptor | Videos | Screenshots | Trace | Retries | Tagging | Viewport | Reports - Playwright, Allure | SSL | Execution - Parallel, Serial, Default | Parameterization using multiple Data sets
 
 ------------------------------------------------------------------------------------------------------------------------
