@@ -1,4 +1,4 @@
-# Playwright_JS_Basics
+# Playwright_JS
 Automation Testing | Web+API | Playwright | Javascript | VS Code | Parallel Cross Browser Testing | API Interceptor | Videos | Screenshots | Trace | Retries | Tagging | Viewport | Reports - Playwright, Allure | SSL | Execution - Parallel, Serial, Default | Parameterization using multiple Data sets
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -8,7 +8,7 @@ Automation Testing | Web+API | Playwright | Javascript | VS Code | Parallel Cros
 # Tutor: <a href="https://www.udemy.com/user/rahul445/">Rahul Shetty</a>
 
 ------------------------------------------------------------------------------------------------------------------------
-Learnings from Course : 
+# Learnings from Course : [Summary_UDEMY_RS_Playwright JS Automation Testing from Scratch with Framework.pdf](https://github.com/rajatt95/Playwright_JS/files/8687148/Summary_UDEMY_RS_Playwright.JS.Automation.Testing.from.Scratch.with.Framework.pdf)
 ------------------------------------------------------------------------------------------------------------------------
 
 ![image](https://user-images.githubusercontent.com/26399692/165678491-e42489bc-3f7e-49d7-9962-b6843555bc75.png)
