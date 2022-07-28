@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test
+      run: npx playwright test tests/*/03_WaitAndAssertTitle.spec.js --headed
     - uses: actions/upload-artifact@v2
       if: always()
       with:
