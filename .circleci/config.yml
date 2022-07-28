@@ -1,0 +1,36 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: qawolf/playwright-ci:v1.0.0
+    steps:
+      - checkout
+
+      - run:
+          command: npm install
+
+      - run:
+          command: |
+            # # Start local server
+            # npm run start & 
+            # npx wait-on http://localhost:3000
+            # replace below with command you want to run, example for running a script below
+            # node myScript.js
+            # npm test
+            npx playwright test tests/*/03_WaitAndAssertTitle.spec.js --headed
+
+# # example for running on a schedule, edit to suit your use case
+# # documentation: https://circleci.com/docs/2.0/configuration-reference/#schedule
+# workflows:
+#   version: 2
+#   on_schedule:
+#     jobs:
+#       - build
+#     triggers:
+#       - schedule:
+#           # test on schedule using cron syntax
+#           cron: "0 * * * *" # every hour
+#           filters:
+#             branches:
+#               only:
+#                 - master
